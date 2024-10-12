@@ -14,6 +14,7 @@ public class DataLayoutStrategy {
   // TODO: refactor cost -> estimated_compute_cost, gain -> estimated_file_count_reduction
   private final double cost;
   private final double gain;
+  private final int count;
   private final DataCompactionConfig config;
   // TODO: support sorting config
 }

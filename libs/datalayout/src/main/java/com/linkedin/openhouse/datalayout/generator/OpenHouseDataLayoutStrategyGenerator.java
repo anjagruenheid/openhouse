@@ -126,6 +126,7 @@ public class OpenHouseDataLayoutStrategyGenerator implements DataLayoutStrategyG
             .config(configBuilder.build())
             .cost(computeGbHr)
             .gain(reducedFileCount)
+            .count(fileSizes.count())
             .score(reducedFileCountPerComputeGbHr)
             .entropy(computeEntropy(fileSizes))
             .build());
